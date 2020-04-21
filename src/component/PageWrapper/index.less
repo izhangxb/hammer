@@ -1,0 +1,65 @@
+
+.page-wrapper {
+  .header {
+
+    background: white;
+    box-shadow: 0 2px 8px #f0f1f2;
+    z-index: 10;
+    height: 64px;
+    position: fixed;
+    width: 100%;
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+      }
+
+      .logo-name {
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 10px;
+      }
+
+    }
+  }
+
+  .main-wrapper {
+    position: relative;
+    padding: 96px 0 0;
+    background: #fff;
+
+    height: 100vh;
+
+    .side-wrapper {
+      background: #ffffff;
+
+      .menu {
+        height: 100%;
+
+        .subMenu{
+          .menu-item{
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+
+    .content-wrapper {
+      background: white;
+      height: 100%;
+      overflow-y: auto;
+
+      .content{
+        padding: 0 32px 32px 32px;
+      }
+
+    }
+  }
+}
+

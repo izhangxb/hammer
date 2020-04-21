@@ -1,0 +1,61 @@
+{
+  "name": "hammer",
+  "version": "1.0.0",
+  "description": "锤子在手，天下我有",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "dev": "node build/dev-server.js ",
+    "build": "webpack --config build/webpack.prd.js",
+    "electron_start": "cross-env NODE_ENV=development && electron .",
+    "packager_mac": "electron-packager ./ hammer --platform=darwin --out ./outApp  --overwrite --icon=./logo.icns",
+    "packager_win32": "electron-packager ./ hammer --platform=win32 --arch=x64 --out ./outApp  --overwrite --icon=./logo.ico"
+  },
+  "author": "zhangxb",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "antd": "^3.10.9",
+    "autoprefixer": "^9.7.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.12.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.2.0",
+    "css-split-webpack-plugin": "^0.2.6",
+    "electron": "^8.2.1",
+    "electron-packager": "^14.2.1",
+    "express": "^4.17.1",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.7.2",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^1.4.3",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-dev-server": "^3.9.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.7.0",
+    "core-js": "^2.6.10",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router": "^5.1.2",
+    "react-router-dom": "^5.1.2",
+    "webpack-merge": "^4.2.2"
+  },
+  "theme": {
+    "primary-color": "#2E94B9"
+  }
+}
