@@ -1,6 +1,6 @@
 # hammer
 
-![](/src/images/home_bg.jpg)
+![981af50e464aa207c0bec5ce972f6195.jpg](https://i.loli.net/2020/04/21/9cKxMlatDQ4rAm1.jpg)
 
 ## 简介
 
