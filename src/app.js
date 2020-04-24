@@ -11,6 +11,10 @@ import Home from './page/home/index.js'
 import PageWrapper from "./component/PageWrapper";
 import hash from "./page/hash";
 import AES_DES from "./page/aes_des";
+import RSA from "./page/rsa";
+import Unicode from "./page/unicode";
+import Url from "./page/url";
+import QRCode from "./page/QRcode";
 
 
 
@@ -23,6 +27,10 @@ class APP extends React.Component {
                     <Switch>
                         <Route path="/hash" component={hash} />
                         <Route path="/aes_des" component={AES_DES} />
+                        <Route path="/rsa" component={RSA} />
+                        <Route path="/unicode" component={Unicode} />
+                        <Route path="/url" component={Url} />
+                        <Route path="/qr" component={QRCode} />
                         <Route path="/" component={Home} />
                     </Switch>
 

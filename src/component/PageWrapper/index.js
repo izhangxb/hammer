@@ -93,7 +93,7 @@ class PageWrapper extends Component {
                                 <Menu.Item
                                     key="url"
                                     className="menu-item" >
-                                    URL编解码
+                                    URL相关
                                 </Menu.Item>
                             </SubMenu>
 
@@ -141,7 +141,7 @@ class PageWrapper extends Component {
 
                             <SubMenu key="4" title="二维码">
                                 <Menu.Item
-                                    key="barcode"
+                                    key="qr"
                                     className="menu-item" >
                                     生成二维码
                                 </Menu.Item>
