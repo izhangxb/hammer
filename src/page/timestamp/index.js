@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Title from "../../component/Title";
-import {Button, Card, Col, Input, Row, Select} from "antd";
+import {Button, Card, Col, Input, message, Row, Select} from "antd";
 
 import {copyLink} from "../../common/utils";
 
@@ -90,10 +90,15 @@ class TimeStamp extends Component {
     }
 
     time2stamp = () => {
-        let date = new Date(this.state.time2);
-        this.setState({
-            timeStamp2: this.state.mode2==="S" ? parseInt(date.getTime()/1000) : date.getTime()
-        });
+        let date;
+        date = new Date(this.state.time2);
+        if (date.getTime()) {
+            this.setState({
+                timeStamp2: this.state.mode2 === "S" ? parseInt(date.getTime() / 1000) : date.getTime()
+            });
+        } else {
+            message.error("格式不正确！")
+        }
     }
 
     render() {
@@ -123,7 +128,7 @@ class TimeStamp extends Component {
 
                     <p className="title">时间戳 to Time</p>
 
-                    <Row >
+                    <Row>
 
                         <Col span={8}>
                             <Input addonBefore={this.selectBefore1} value={this.state.timeStamp1}
@@ -150,7 +155,7 @@ class TimeStamp extends Component {
 
                     <p className="title">Time to 时间戳</p>
 
-                    <Row >
+                    <Row>
                         <Col span={8}>
                             <Input value={this.state.time2}
                                    placeholder={"YYYY-MM-dd HH:MM:SS"}
