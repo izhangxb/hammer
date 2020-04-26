@@ -15,7 +15,7 @@ import RSA from "./page/rsa";
 import Unicode from "./page/unicode";
 import Url from "./page/url";
 import QRCode from "./page/QRcode";
-
+import Timestamp from "./page/timestamp";
 
 
 class APP extends React.Component {
@@ -31,6 +31,7 @@ class APP extends React.Component {
                         <Route path="/unicode" component={Unicode} />
                         <Route path="/url" component={Url} />
                         <Route path="/qr" component={QRCode} />
+                        <Route path="/timestamp" component={Timestamp} />
                         <Route path="/" component={Home} />
                     </Switch>
 

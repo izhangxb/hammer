@@ -125,16 +125,11 @@ class PageWrapper extends Component {
 
 
                             <SubMenu key="3" title="时间相关">
-                                <Menu.Item
-                                    key="get_timp"
-                                    className="menu-item" >
-                                    获取当前时间戳
-                                </Menu.Item>
 
                                 <Menu.Item
-                                    key="time2time"
+                                    key="timestamp"
                                     className="menu-item" >
-                                    时间戳转换
+                                    时间戳
                                 </Menu.Item>
 
                             </SubMenu>
