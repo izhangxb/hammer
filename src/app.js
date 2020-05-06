@@ -16,6 +16,7 @@ import Unicode from "./page/unicode";
 import Url from "./page/url";
 import QRCode from "./page/QRcode";
 import Timestamp from "./page/timestamp";
+import JsonFormat from "./page/jsonFormat";
 
 
 class APP extends React.Component {
@@ -32,6 +33,7 @@ class APP extends React.Component {
                         <Route path="/url" component={Url} />
                         <Route path="/qr" component={QRCode} />
                         <Route path="/timestamp" component={Timestamp} />
+                        <Route path="/json_format" component={JsonFormat} />
                         <Route path="/" component={Home} />
                     </Switch>
 

@@ -99,7 +99,7 @@ class PageWrapper extends Component {
 
                             <SubMenu key="2" title="JSON相关">
                                 <Menu.Item
-                                    key="format"
+                                    key="json_format"
                                     className="menu-item" >
                                     JSON格式化
                                 </Menu.Item>
@@ -107,7 +107,7 @@ class PageWrapper extends Component {
                                 <Menu.Item
                                     key="uglify"
                                     className="menu-item" >
-                                    JS压缩
+                                    JSON压缩
                                 </Menu.Item>
 
                                 <Menu.Item
