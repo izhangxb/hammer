@@ -17,6 +17,7 @@ import Url from "./page/url";
 import QRCode from "./page/QRcode";
 import Timestamp from "./page/timestamp";
 import JsonFormat from "./page/jsonFormat";
+import Camel from "./page/camel";
 
 
 class APP extends React.Component {
@@ -34,6 +35,7 @@ class APP extends React.Component {
                         <Route path="/qr" component={QRCode} />
                         <Route path="/timestamp" component={Timestamp} />
                         <Route path="/json_format" component={JsonFormat} />
+                        <Route path="/camel" component={Camel} />
                         <Route path="/" component={Home} />
                     </Switch>
 

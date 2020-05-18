@@ -150,12 +150,6 @@ class PageWrapper extends Component {
                                 </Menu.Item>
 
                                 <Menu.Item
-                                    key="cap2samll"
-                                    className="menu-item" >
-                                    大小写转换
-                                </Menu.Item>
-
-                                <Menu.Item
                                     key="rgb2hex"
                                     className="menu-item" >
                                     RGB与HEX转换
