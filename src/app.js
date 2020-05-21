@@ -18,6 +18,7 @@ import QRCode from "./page/QRcode";
 import Timestamp from "./page/timestamp";
 import JsonFormat from "./page/jsonFormat";
 import Camel from "./page/camel";
+import Rgb2Hex from "./page/rgb_hex";
 
 
 class APP extends React.Component {
@@ -36,6 +37,7 @@ class APP extends React.Component {
                         <Route path="/timestamp" component={Timestamp} />
                         <Route path="/json_format" component={JsonFormat} />
                         <Route path="/camel" component={Camel} />
+                        <Route path="/rgb2hex" component={Rgb2Hex} />
                         <Route path="/" component={Home} />
                     </Switch>
 
