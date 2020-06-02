@@ -16,14 +16,15 @@ jobs:
     strategy:
       matrix:
         node-version: [10.x]
-        os: [macos-latest, ubuntu-latest, windows-latest]
+        os: [macos-latest, windows-latest]
     steps:
     - uses: actions/checkout@v2
    
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}    
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci    
     - run: npm run packager_mac
     - run: npm run packager_win32 
         
