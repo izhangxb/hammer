@@ -27,7 +27,7 @@ jobs:
     - run: npm ci
     - run: npm run packager_mac
 
-    - name:release apk
+    - name: release apk
       uses: actions/download-artifact@v2
       with:
         path: "outApp/hammer-darwin-x64/*.*"
@@ -50,6 +50,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run packager_win32
+
+      - name: release apk
         uses: actions/download-artifact@v2
           with:
             path: "outApp/hammer-win32-x64/*.*"
