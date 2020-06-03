@@ -27,6 +27,12 @@ jobs:
     - run: npm ci
     - run: npm run packager_mac
 
+    - name:release apk
+      uses: ncipollo/release-action@v1.5.0
+      with:
+        artifacts: "outApp/hammer-darwin-x64/*.*"
+        token: ${{ secrets.GITHUB_RElEASE_TOKEN }}
+
   build_win:
 
     runs-on: ${{ matrix.os }}
@@ -44,5 +50,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run packager_win32
-
+        uses: ncipollo/release-action@v1.5.0
+          with:
+            artifacts: "outApp/hammer-win32-x64/*.*"
+            token: ${{ secrets.GITHUB_RElEASE_TOKEN }}
 
